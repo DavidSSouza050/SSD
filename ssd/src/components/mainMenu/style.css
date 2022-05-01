@@ -1,0 +1,50 @@
+nav#MainMenu {
+    display: flex;
+    flex-direction: row; /* Indica que o conteúdo dentro do elemento vai ser exibido em linha */
+    justify-content: space-between; /* Separa os elementos filhos, inserindo um espaço entre eles */
+    align-items: center; /* Separa os elementos filhos, inserindo um espaço entre eles */
+    justify-content: center;
+
+    width: 100%; /* Ocupa a largura completa do elemento pai */
+    background-color: #b987e1;
+    padding: 16px 32px; /* Adiciona 16px de padding vertical e 32 de padding horizontal (padding = espaço entre a
+    borda do elemento e o conteúdo interno do elemento) */
+
+    color: white; /* Cor do texto escrito no elemento */
+}
+nav#MainMenu .content {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    max-width: 1200px; /* Define o tamanho máximo que um elemento pode ter em tela*/
+}
+
+nav#MainMenu .logo {
+    font-size: 28px; 
+}
+
+nav#MainMenu .options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px; /* Define quanto de distância todos os elementos dentro deste elemento teram entre si */
+}
+nav#MainMenu .options img {
+    width: 24px;
+    height: auto; /* Com base na largura, calcula a altura, mantendo a proporção original da imagem */
+    filter: invert(1); /* Inverte as cores do elemento */
+    margin-right: 4px; /* Cria uma distância de 4px em relação ao elemento da direita */
+}
+nav#MainMenu .options .circle {
+    width: 24px;
+    height: 24px;
+    background-color: aliceblue;
+    border-radius: 100%; /* Controla o arredondamento da borda. de 50% para cima, o elemento terá suas bordas
+arredondadas ao máximo, mas podem ser usados valores em pixels */
+}
+nav#MainMenu .options a {
+    color: white;
+    text-decoration: none; /* Remove as decorações do texto, como sublinhados */
+}
+  

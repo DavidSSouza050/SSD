@@ -1,0 +1,84 @@
+/* Importando a fonte Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
+/* Resetando os estilos padrões do navegador */
+* { /* Referencia todos os elementos da página */
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  box-sizing: border-box; /* 'border-box' define que o tamanho total do elemento inclui o tamanho do border e padding,
+  - Caso não haja, se a largura de um elemento for definida como 32px e eu adicionar uma borda de 2px na esquerda, o
+  elemento terá um total de 32 + 2 = 34px de largura.
+  - Caso haja o 'bordex-box', se a largura for definida como 32px e tiver a mesma borda de 2px na esquerda, o
+  elemento irá manter o tamanho total como 32px, aplicando 2px de borda e 30px de width, completando uma largura
+  real de 32px (30+2=32px) */
+}
+
+html, body {
+  /* Aplica a fonte Roboto no html e body, e caso não haja a Roboto, aplica uma fonte 'sans-serif' */
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  display: flex; /* Indica o tipo de display que o elemento vai ter */
+  flex-direction: column; /* Indica que o contéudo dentro do elemento vai ser exibido em colunas */
+  justify-content: center; /* Centraliza o conteúdo no mesmo eixo que o flex-direction (nesse caso, como
+  o flex-direction está no sentido de coluna (|)) */
+  align-items: center; /* Centraliza o conteúdo em relação ao eixo que cruza o flex-direction (nesse caso o eixo
+  que corta a coluna é o contrário do flex-direction (-) */
+}
+
+main {
+  padding: 32px 16px; /* Adiciona 32px de padding vertical e 16px de padding horizontal */
+  max-width: 1200px;
+  width: 100%;
+}
+
+main > header {
+  display: flex;
+  justify-content: flex-end; /* Alinha o conteúdo do elemento ao fim do elemento */
+  margin-bottom: 24px; /* Adiciona uma distância ao elemento de baixo */
+}
+
+div.container {
+  padding: 0px 64px; /* Adiciona 0px de padding vertical e 64px de padding horizontal */
+}
+
+section .sectionHeader {
+  background-color: #b987e1;
+  color: white;
+  padding: 16px; /* Adiciona 16px de padding em todos os lados do elemento */
+  text-transform: uppercase; /* Converte o texto dentro do elemento para o formato "UPPERCASE" */
+}
+section .content {
+  padding: 32px; /* Adiciona 32px de padding em todos os lados do elemento */
+}
+section#Filters .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px; /* Adiciona 16px de separação entre os elementos dentro desse elemento */
+  border: 2px solid #c5d1db; /* Adiciona uma borda de 2px sólida (continua) em todos os lados do elemento */
+  border-bottom: 0px; /* Remove a borda que está na parte de baixo do elemento (e mantém as outras) */
+  min-height: 100px;/*Definido a altura minima*/
+  height: auto; /*Caso ultrapasse a altura minima a container irá crescer automatico*/
+  overflow: hidden;/*Definido para não aparecer a barra de rolagem*/
+}
+section#Filters .content button {
+  margin-top: 19px;
+  padding: 12px 32px; /* Adiciona 12px de padding vertical e 32px de padding horizontal */
+  margin-left: 32px;
+}
+
+section#Table table {
+  width: 100%;
+  text-align: center; /* Alinha o texto do elemento ao centro */
+  border-collapse: collapse; /* Define que as bordas da tabela vão se colidir, sem deixar espaços entre as células */
+  border: 2px solid #c5d1db;
+}
+section#Table table thead,
+section#Table table tbody tr {
+  height: 58px;
+  border-bottom: 2px solid #c5d1db;
+}

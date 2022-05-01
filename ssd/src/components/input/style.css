@@ -1,0 +1,17 @@
+.inputField input, .inputField select {
+    height: 42px;
+    border: 2px solid #cfd6dc;
+    border-radius: 4px;
+    padding: 0px 16px;
+}
+  
+.inputField {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Indica que o elemento pode tomar o máximo possível de tamanho no elemento pai */
+}
+
+.inputField label {
+    color: #4c5d6c;
+    font-weight: bold;
+}
